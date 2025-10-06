@@ -11,7 +11,7 @@
       <div class="logo-nav">
         <!--Логотип-->
         <div class="b-logo">
-          <img src="/logo/logo.svg" alt="shopet" loading="lazy">
+          <img ngSrc="/logo/logo.svg" alt="shopet" height="32" width="114" priority >
           <div class="under-logo">
             Сахалин маркет
           </div>
@@ -219,12 +219,15 @@
 
       <div class="b-footer">
         <div class="fot-ne">
-          <svg class="svg1" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px">
+          <svg [ngStyle]="{'fill': bgColorHome}" class="svg1" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px">
             <path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/>
           </svg>
         </div>
         <div class="fot-ne">
-          <svg class="svg1" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" ><path d="M80-160v-160h160v160H80Zm240 0v-160h560v160H320ZM80-400v-160h160v160H80Zm240 0v-160h560v160H320ZM80-640v-160h160v160H80Zm240 0v-160h560v160H320Z"/></svg>
+          <svg class="svg1" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px">
+            <path
+              d="M80-160v-160h160v160H80Zm240 0v-160h560v160H320ZM80-400v-160h160v160H80Zm240 0v-160h560v160H320ZM80-640v-160h160v160H80Zm240 0v-160h560v160H320Z"/>
+          </svg>
 
         </div>
         <div class="fot-ne">

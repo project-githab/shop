@@ -1,15 +1,19 @@
-import {Component, DoCheck} from '@angular/core';
+import {Component, DoCheck, OnInit} from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import {NgOptimizedImage, NgStyle} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-c-header',
   imports: [
-    FormsModule
+    FormsModule,
+    NgOptimizedImage,
+    NgStyle
   ],
   templateUrl: './c-header.html',
   styleUrl: './c-header.css'
 })
-export class CHeader implements DoCheck{
+export class CHeader implements OnInit, DoCheck{
 
 
 
@@ -34,6 +38,19 @@ export class CHeader implements DoCheck{
   valueInput: string = '';
 
 
+  bgColorHome: string = '';
+
+  constructor(private router: Router) { }
+
+  ngOnInit(): void {
+
+    this.router.url;
+    if (this.router.url === "/") {
+      this.bgColorHome = '#ff5300';
+    }
+
+  }
+
   /**
    * Метод очистки input search от данных
    */
@@ -57,8 +74,9 @@ export class CHeader implements DoCheck{
      */
     this.isVisible = this.valueInput === '';
 
-
   }
+
+
 
 
 }
