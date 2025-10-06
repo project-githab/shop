@@ -124,5 +124,17 @@ h1 {
 .wrap-bn {
   display: none;
 }
+.wrap-bf {
+  display: flex;
+}
+
+.svg1 {
+  width: 3rem;
+  height: 3rem;
+  /*fill: #ff5300;*/
+  fill: #737373;
+}
+
+
 
 /*Общие*/
