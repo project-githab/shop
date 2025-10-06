@@ -1,1 +1,128 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../public/fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../public/fonts/Roboto-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../public/fonts/Roboto-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #ffffff;
+  --color-2: #000000;
+  --color-3: #F6F7F8;
+  --color-4: #e6c519;
+  --color-5: #ffdc26;
+  --color-6: #bfbfbf;
+  --color-7: #A1A1A1;
+
+  --transform1: box-shadow 0.3s;
+  --transform2: fill 0.3s;
+  --transform3: color 0.3s;
+
+
+  --shadow-1: 0 0 0.8rem 0 rgb(96 125 139 / 56%);
+  --shadow-2: 0 0 0.8rem 0 rgb(255 61 0 / 32%);
+
+  --transform4: background-color 0.3s;
+
+  --rotateZ: rotateZ(45deg);
+
+  --border-1: 1px solid #CDCDCD;
+}
+
+html {
+  font-family: 'Roboto', Sans-Serif, Arial, serif;
+  font-size: 62.5%;
+  color: var(--color-2);
+  background-color: var(--color-1);
+  /*height: 100%;*/
+  /* Если установить это значение, то header со свойством position: sticky;
+    не будет опускаться до конца страницы. А если включить этот параметр, то filler будет замечательно отрабатывать.
+    filler нужен для того, чтобы прижать footer к низу, он служит как свойство flex: 1;*/
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+/*Общие*/
+.s-wh {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.t-b {
+  font-weight: bold;
+}
+
+.f-s10 {
+  font-size: 1rem;
+}
+
+.f-s16 {
+  font-size: 1.6rem;
+}
+
+.btn-s-1 {
+  padding: 0.6rem 1.4rem 0.6rem 1.4rem;
+}
+
+.fgt path {
+  fill: var(--color-7);
+  transition: fill 0.3s ease-in-out;
+}
+
+.glow:active {
+  box-shadow: var(--shadow-2);
+}
+
+.c-el {
+  background-color: var(--color-3);
+}
+
+.scs path {
+  fill: var(--color-2);
+}
+
+.marg4r {
+  margin-right: 4rem;
+}
+.marg4l {
+  margin-left: 4rem;
+}
+
+.wrap-bn {
+  display: none;
+}
+
+/*Общие*/
