@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../public/fonts/Roboto-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../public/fonts/Roboto-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../public/fonts/Roboto-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 *,
@@ -36,6 +36,9 @@
   --color-5: #ffdc26;
   --color-6: #bfbfbf;
   --color-7: #A1A1A1;
+  --color-8: #d4d4d4;
+  --color-9: #eeeeee;
+  --color-10: #737373;
 
   --transform1: box-shadow 0.3s;
   --transform2: fill 0.3s;
@@ -69,10 +72,11 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h1 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /*Общие*/
@@ -109,6 +113,9 @@ h1 {
 .c-el {
   background-color: var(--color-3);
 }
+.c-ew {
+  background-color: var(--color-9);
+}
 
 .scs path {
   fill: var(--color-2);
@@ -117,6 +124,7 @@ h1 {
 .marg4r {
   margin-right: 4rem;
 }
+
 .marg4l {
   margin-left: 4rem;
 }
@@ -124,6 +132,7 @@ h1 {
 .wrap-bn {
   display: none;
 }
+
 .wrap-bf {
   display: flex;
 }
@@ -131,10 +140,12 @@ h1 {
 .svg1 {
   width: 3rem;
   height: 3rem;
-  /*fill: #ff5300;*/
-  fill: #737373;
+  fill: var(--color-10);
 }
 
+.d-cont {
+  display: contents;
+}
 
 
 /*Общие*/

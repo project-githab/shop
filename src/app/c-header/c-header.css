@@ -239,19 +239,13 @@
   gap: 3rem;
 }
 
-
-.content-body {
-  flex-grow: 1;
-  background-color: var(--color-1);
-  padding: 2rem;
-}
-
 .footer-fix {
   position: fixed;
-  height: 50px;
+  height: 5rem;
   bottom: 0;
   width: 100%;
   background-color: var(--color-3);
+  border-top: 0.3rem solid var(--color-8);
 }
 
 
