@@ -12,8 +12,7 @@
   margin-right: auto;
   background-color: #e2b6ff;
   max-width: 1530px;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
+  padding: 2rem 1.2rem;
 }
 
 /* Базовый стиль для карточек */
@@ -24,6 +23,29 @@
   background-color: rgb(55, 150, 120);
   border-radius: 1rem;
   flex-direction: column;
+}
+
+.b-img-p {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  /*background-color: rgb(255, 0, 0);*/
+  background-color: rgb(247, 247, 247);
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b-img-p img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
+}
+
+.b-description {
+  background-color: #86c0ff;
 }
 
 /* ≥270px — 2 колонки */
@@ -71,21 +93,3 @@
   }
 }
 
-.b-img-p {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  /*background-color: rgb(255, 0, 0);*/
-  background-color: rgb(247, 247, 247);
-  border-radius: 1rem 1rem 0 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.b-img-p img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: inherit;
-}
