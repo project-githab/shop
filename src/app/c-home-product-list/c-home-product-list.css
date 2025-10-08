@@ -72,6 +72,20 @@
 }
 
 .b-img-p {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  /*background-color: rgb(255, 0, 0);*/
+  background-color: rgb(247, 247, 247);
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
   display: flex;
-  background-color: rgb(255, 0, 0);
+  align-items: center;
+  justify-content: center;
+}
+
+.b-img-p img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
 }
