@@ -135,7 +135,7 @@
 }
 
 .b-icon-svg-lens {
-  display: flex;
+  display: none;
   width: 5rem;
   height: 5rem;
   background-color: #ffffff;
@@ -168,6 +168,8 @@
   border-right: none;
   outline: none;
   font-size: 2rem;
+  padding: 0 0 0 0.8rem;
+  border-radius: 2.5rem 0 0 2.5rem;
 }
 
 .b-btn-search {
@@ -207,7 +209,7 @@
 /*Кнопка очистить поле поиска*/
 
 .btn-c {
-  display: flex;
+  display: none;
   width: 3rem;
   height: 3rem;
   background-color: #d9d9d9;
@@ -254,11 +256,29 @@
   justify-content: space-between;
   height: 100%;
 }
+
 .fot-ne {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+/*270px*/
+@media (min-width: 16.875em) {
+
+  .in-search {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .b-icon-svg-lens {
+    display: flex;
+  }
+
+  .btn-c {
+    display: flex;
+  }
 }
 
 /*576px*/
@@ -276,7 +296,6 @@
 /*768px*/
 @media (min-width: 48em) {
 
-
 }
 
 /*992px*/
@@ -287,8 +306,8 @@
   }
 
   .wrap-bf {
-  display: none;
-}
+    display: none;
+  }
 
   .top-nav {
     display: flex;

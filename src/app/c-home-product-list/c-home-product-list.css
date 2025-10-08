@@ -1,12 +1,77 @@
+
+.content {
+  width: 100%;
+  background-color: darkorange;
+}
+
 .b-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e2b6ff;
+  max-width: 1530px;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+/* Базовый стиль для карточек */
+.b-product {
   display: flex;
-  flex: 1;
+  height: 31.5rem;
+  box-shadow: 0 0 0.8rem 0 rgb(191 191 191 / 50%);
+  background-color: rgb(55, 150, 120);
+  border-radius: 1rem;
   flex-direction: column;
 }
 
-.b-product {
+/* ≥270px — 2 колонки */
+@media (min-width: 16.875em) {
+  .b-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ≥576px — 3 колонки */
+@media (min-width: 36em) {
+  .b-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ≥768px — остаётся 3 колонки */
+@media (min-width: 48em) {
+  .b-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+
+/* ≥992px — 4 колонки */
+@media (min-width: 62em) {
+  .b-content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ≥1200px — 5 колонок */
+@media (min-width: 75em) {
+  .b-content {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .b-product {
     max-width: 29rem;
-    height: 51rem;
-    box-shadow: 0 0 0.8rem 0 rgb(191 191 191 / 50%);
-    border-radius: 1rem;
+  }
+}
+
+.b-img-p {
+  display: flex;
+  background-color: rgb(255, 0, 0);
 }
