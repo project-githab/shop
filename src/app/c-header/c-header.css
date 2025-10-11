@@ -147,8 +147,13 @@
 
 }
 
-.svg-el-lens {
+.svg-el-lens1 {
   width: 5.8rem;
+  height: 3rem;
+}
+
+.svg-el-lens2 {
+  width: 3rem;
   height: 3rem;
 }
 
@@ -176,13 +181,12 @@
   display: flex;
   height: 5rem;
   align-items: center;
-  padding: 0 0.7rem;
+  padding: 0 0;
   border: var(--border-1);
   border-left: none;
   border-radius: 0 2.5rem 2.5rem 0;
   justify-content: center;
   background-color: var(--color-1);
-
 }
 
 /*search*/
@@ -213,10 +217,26 @@
 
 /*Кнопка очистить поле поиска*/
 
+/*Жёлтая кнопка 1*/
+.btn1 {
+  display: flex;
+  align-content: center;
+  background-color: var(--color-5);
+  border-radius: 0 25px 25px 0;
+  width: fit-content;
+  cursor: pointer;
+  transition: var(--transform4) ease-in-out;
+}
+
+.btn1:hover {
+  background-color: var(--color-4);
+}
 
 /*Жёлтая кнопка 1*/
-.btn {
-  display: flex;
+
+/*Жёлтая кнопка 2*/
+.btn2 {
+  display: none;
   align-content: center;
   background-color: var(--color-5);
   border-radius: 2rem;
@@ -225,11 +245,11 @@
   transition: var(--transform4) ease-in-out;
 }
 
-.btn:hover {
+.btn2:hover {
   background-color: var(--color-4);
 }
 
-/*Жёлтая кнопка 1*/
+/*Жёлтая кнопка 2*/
 
 .logo-nav {
   display: flex;
@@ -279,6 +299,19 @@
   .btn-c {
     display: flex;
   }
+
+  .b-btn-search {
+    padding: 0 0.7rem;
+  }
+
+  .btn1 {
+    display: none;
+  }
+
+  .btn2 {
+    display: flex;
+  }
+
 }
 
 /*576px*/
