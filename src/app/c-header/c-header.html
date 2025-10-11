@@ -57,15 +57,15 @@
 
               <!--Кнопка очистить поле поиска-->
 
-              @if (!isVisible) {
-                <div class="btn-c fgt glow" (click)="clearInputSearch()">
-                  <svg class="s-wh" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+<!--              @if (!isVisible) {-->
+                <div [class.btn-c]="!isVisible" class="btn-c fgt glow" (click)="clearInputSearch()">
+                  <svg [class.opa1]="isVisible" [class.opa2]="!isVisible" class="s-wh" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
                        width="20px">
                     <path
                       d="m252-176-74-76 227-228-227-230 74-76 229 230 227-230 74 76-227 230 227 228-74 76-227-230-229 230Z"/>
                   </svg>
                 </div>
-              }
+<!--              }-->
 
 
               <!--Кнопка очистить поле поиска-->
