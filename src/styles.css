@@ -39,6 +39,7 @@
   --color-8: #d4d4d4;
   --color-9: #eeeeee;
   --color-10: #737373;
+  --color-11: #f7f7f7;
 
   --transform1: box-shadow 0.3s;
   --transform2: fill 0.3s;
@@ -52,7 +53,7 @@
 
   --rotateZ: rotateZ(45deg);
 
-  --border-1: 1px solid #CDCDCD;
+  --border-1: 0.11rem solid #CDCDCD;
 }
 
 html {
@@ -68,6 +69,7 @@ html {
 
 body {
   margin: 0;
+  font-size: 1.6rem;
 }
 
 a {
@@ -101,6 +103,22 @@ h1 {
   padding: 0.6rem 1.4rem 0.6rem 1.4rem;
 }
 
+.btn-b {
+  display: flex;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0 0 1rem 1rem;
+  margin-top: 1rem;
+  transition: var(--transform4) ease-in-out;
+  background-color: var(--color-5);
+}
+
+.btn-b:hover {
+  background-color: var(--color-4);
+}
+
 .fgt path {
   fill: var(--color-7);
   transition: fill 0.3s ease-in-out;
@@ -113,6 +131,7 @@ h1 {
 .c-el {
   background-color: var(--color-3);
 }
+
 .c-ew {
   background-color: var(--color-9);
 }

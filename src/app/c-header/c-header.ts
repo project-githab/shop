@@ -46,7 +46,7 @@ export class CHeader implements OnInit, DoCheck{
 
     this.router.url;
     if (this.router.url === "/") {
-      this.bgColorHome = '#ff5300';
+      this.bgColorHome = '#ff5500';
     }
 
   }
