@@ -18,9 +18,9 @@
 /* Базовый стиль для карточек */
 .b-product {
   display: flex;
-  height: 43.9rem;
   box-shadow: 0 0 0.8rem 0 rgb(191 191 191 / 50%);
   background-color: var(--color-11);
+  /*background-color: brown;*/
   border-radius: 1rem;
   flex-direction: column;
 }
@@ -48,6 +48,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 10px 10px 0 10px;
 }
 
 .b-rating {
@@ -109,6 +110,7 @@
   overflow: hidden;
   white-space: normal;
   line-height: 1;
+  min-height: 10.6rem;
   border: 0.3rem solid transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -125,24 +127,62 @@
   transition: none;
 }
 
-/* ≥270px — 2 колонки */
+/* ≥270px */
 @media (min-width: 16.875em) {
   .b-content {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .amount {
+    font-size: 1.2rem;
+  }
+
+  .star {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .rating-star {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
 
 
+/* ≥302px */
+@media (min-width: 18.875em) {
+  .amount {
+    font-size: 1.6rem;
+  }
+
+  .star {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .rating-star {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  /*.text {*/
+  /*  min-height: 10.55rem;*/
+  /*}*/
+
+}
+
 /* ≥576px — 3 колонки */
 @media (min-width: 36em) {
+
   .b-content {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .text {
-    font-size: 1.6rem;
     -webkit-line-clamp: 4;
     line-height: 1.4;
+    /*min-height: calc(5 * 1.71rem);*/
+    min-height: 11.8rem;
   }
 
   .star {
