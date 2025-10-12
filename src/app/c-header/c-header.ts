@@ -2,13 +2,19 @@ import {Component, DoCheck, OnInit} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {NgOptimizedImage, NgStyle} from '@angular/common';
 import {Router} from '@angular/router';
+import {CSideBar} from '../c-side-bar/c-side-bar';
+import {Burger} from '../_directives/side-bar/burger';
+import {ClickOutside} from '../_directives/click_outside/click-outside';
 
 @Component({
   selector: 'app-c-header',
   imports: [
     FormsModule,
     NgOptimizedImage,
-    NgStyle
+    NgStyle,
+    CSideBar,
+    Burger,
+    ClickOutside
   ],
   templateUrl: './c-header.html',
   styleUrl: './c-header.css'
@@ -62,6 +68,16 @@ export class CHeader implements OnInit, DoCheck{
     this.valueInput = '';
   }
 
+
+  isActive: boolean = false;
+  clickButtonBurger() {
+    this.isActive = !this.isActive;
+  }
+
+  deactivateBurger() {
+    this.isActive = false;
+    console.log('Клик вне элемента. isActive:', this.isActive);
+}
 
 
   /**

@@ -24,6 +24,10 @@
   flex-direction: column;
 }
 
+
+.rotateZ {
+  transform: var(--rotateZ);
+}
 /*Логин блок мобила*/
 
 
@@ -38,12 +42,12 @@
   width: fit-content;
   height: fit-content;
   cursor: pointer;
-  transition: var(--transform1), var(--transform2), var(--transform3) ease-in-out;
 }
 
 .icon-t svg {
   width: 3.56rem;
   height: 3.56rem;
+  transition: transform 0.3s ease;
 }
 
 .icon-t:hover {
@@ -63,32 +67,32 @@
 /*Кнопка иконка*/
 
 
-.icon-nt {
-  display: flex;
-  color: var(--color-2);
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1.7rem 2rem 0 0;
-  border-radius: 0.5rem;
-  width: fit-content;
-  height: fit-content;
-  cursor: pointer;
-  transition: var(--transform1), var(--transform2), var(--transform3) ease-in-out;
-}
+/*.icon-nt {*/
+/*  display: flex;*/
+/*  color: var(--color-2);*/
+/*  padding: 1rem 1rem 1rem 1rem;*/
+/*  margin: 1.7rem 2rem 0 0;*/
+/*  border-radius: 0.5rem;*/
+/*  width: fit-content;*/
+/*  height: fit-content;*/
+/*  cursor: pointer;*/
+/*  transition: var(--transform1), var(--transform2), var(--transform3) ease-in-out;*/
+/*}*/
 
-.icon-nt svg {
-  width: 4.4rem;
-  height: 4.4rem;
-}
+/*.icon-nt svg {*/
+/*  width: 4.4rem;*/
+/*  height: 4.4rem;*/
+/*}*/
 
-.icon-nt:hover {
-  box-shadow: var(--shadow-1);
-  color: var(--color-2);
-  fill: var(--color-2);
-}
+/*.icon-nt:hover {*/
+/*  box-shadow: var(--shadow-1);*/
+/*  color: var(--color-2);*/
+/*  fill: var(--color-2);*/
+/*}*/
 
-.icon-nt:active {
-  box-shadow: var(--shadow-2);
-}
+/*.icon-nt:active {*/
+/*  box-shadow: var(--shadow-2);*/
+/*}*/
 
 /*Кнопка иконка*/
 
@@ -268,6 +272,7 @@
   width: 100%;
   background-color: var(--color-3);
   border-top: 0.3rem solid var(--color-8);
+  z-index: 1;
 }
 
 
