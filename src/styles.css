@@ -42,7 +42,6 @@
   --color-11: #f7f7f7;
 
 
-
   --shadow-1: 0 0 0.8rem 0 rgb(96 125 139 / 56%);
   --shadow-2: 0 0 0.8rem 0 rgb(255 61 0 / 32%);
 
@@ -99,6 +98,7 @@ h1 {
 .btn-s-1 {
   padding: 0.6rem 1.4rem 0.6rem 1.4rem;
 }
+
 .btn-s-2 {
   margin: 1.1rem 0.7rem 0.3rem 1rem;
 }
@@ -150,6 +150,8 @@ h1 {
 
 .wrap-bn {
   display: none;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .wrap-bf {

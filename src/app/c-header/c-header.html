@@ -24,12 +24,14 @@
         <!--Кнопка иконка меню-->
 
         <div class="wrap-bn">
-          <div class="icon-t c-el fgt marg4r" (click)="clickButtonBurger()" (clickOutside)="deactivateBurger()">
-            <svg burgerRotateZ [burgerActive]="isActive" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
-              <path d="M110-215v-118h740v118H110Zm0-206v-118h740v118H110Zm0-206v-118h740v118H110Z"/>
-            </svg>
-            <div class="f-s16">Категории</div>
+
+          <div burgerRotateZ [burgerActive]="isActive" class="b-burger" tabindex="0" role="checkbox" (click)="clickButtonBurger()" (clickOutside)="deactivateBurger()">
+            <div class="el"></div>
+            <div class="el"></div>
+            <div class="el"></div>
           </div>
+
+
         </div>
 
 

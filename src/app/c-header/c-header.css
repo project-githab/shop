@@ -28,6 +28,7 @@
 .rotateZ {
   transform: var(--rotateZ);
 }
+
 /*Логин блок мобила*/
 
 
@@ -50,17 +51,17 @@
   transition: transform 0.3s ease;
 }
 
-.icon-t:hover {
-  box-shadow: var(--shadow-1);
-}
+/*.icon-t:hover {*/
+/*  box-shadow: var(--shadow-1);*/
+/*}*/
 
 .icon-t:hover path {
   fill: var(--color-2);
 }
 
-.icon-t:active {
-  box-shadow: var(--shadow-2);
-}
+/*.icon-t:active {*/
+/*  box-shadow: var(--shadow-2);*/
+/*}*/
 
 /*Кнопка иконка с текстом*/
 
@@ -289,6 +290,36 @@
   align-items: center;
 }
 
+
+/*Бургер*/
+.b-burger {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s ease-in-out;
+  margin-right: 2rem;
+  flex-direction: column;
+}
+
+.b-burger:hover {
+  border-radius: 5px;
+  box-shadow: var(--shadow-1);
+}
+
+.el {
+  width: 3.8rem;
+  height: 0.7rem;
+  background-color: var(--color-2);
+  border-radius: 1.5rem;
+}
+
+/*Бургер*/
+
 /*270px*/
 @media (min-width: 16.875em) {
 
@@ -379,7 +410,7 @@
   }
 
   .logo-nav {
-    gap: 6rem;
+    gap: 5rem;
   }
 
   .marg4r {
