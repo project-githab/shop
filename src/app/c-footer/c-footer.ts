@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-c-footer',
@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: './c-footer.html',
   styleUrl: './c-footer.css'
 })
-export class CFooter {
+export class CFooter implements OnInit {
 
+  currentYear!: number;
+
+  ngOnInit() {
+    const today = new Date();
+
+    this.currentYear = today.getFullYear();
+  }
 }

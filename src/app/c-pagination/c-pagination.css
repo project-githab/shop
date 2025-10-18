@@ -1,0 +1,91 @@
+.pagination-mini {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+}
+
+.b-pagination {
+  display: flex;
+  box-shadow: var(--shadow-3);
+  border-radius: 10px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  /*border-radius: 10px;*/
+  /*background-color: var(--color-5);*/
+  /*background-color: rgba(127, 255, 212, 0.34);*/
+  cursor: pointer;
+}
+
+.number:hover {
+  background-color: var(--color-13);
+  box-shadow: var(--shadow-2);
+}
+
+
+/*.pagination {*/
+/*  display: none;*/
+/*  justify-content: center;*/
+/*  font-size: 16px;*/
+
+/*  user-select: none;*/
+/*  -webkit-user-select: none;*/
+/*  -moz-user-select: none;*/
+/*  -ms-user-select: none;*/
+
+/*}*/
+
+
+/*!* ≥302px *!*/
+/*@media (min-width: 18.875em) {*/
+
+/*  .pagination-mini {*/
+/*    display: none;*/
+/*  }*/
+
+/*  .pagination {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    gap: 5px;*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 30px;*/
+/*  }*/
+
+/*  .number {*/
+/*    width: 35px;*/
+/*    height: 35px;*/
+/*  }*/
+
+/*}*/
+
+
+/*!* ≥576px — 3 колонки *!*/
+/*@media (min-width: 36em) {*/
+
+/*  .pagination {*/
+/*    gap: 10px;*/
+/*    font-size: 18px;*/
+/*  }*/
+
+/*  .number {*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*  }*/
+/*}*/

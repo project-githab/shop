@@ -44,10 +44,12 @@
   --color-10: #737373;
   --color-11: #f7f7f7;
   --color-12: #e2e2e2;
+  --color-13: #e7e7e730;;
 
 
   --shadow-1: 0 0 0.8rem 0 rgb(96 125 139 / 56%);
   --shadow-2: 0 0 0.8rem 0 rgb(255 61 0 / 32%);
+  --shadow-3: 0 0 20px 0 rgb(168 168 168 / 95%);
 
   --transform4: background-color 0.3s;
 
@@ -186,4 +188,21 @@ h1 {
   opacity: 1;
 }
 
+.border-bl {
+  border-bottom-left-radius: 10px;
+}
+.border-br {
+  border-bottom-right-radius: 10px;
+}
+.border-tl {
+  border-top-left-radius: 10px;
+}
+.border-tr {
+  border-top-right-radius: 10px;
+}
+
+
+.z-index {
+  z-index: 1;
+}
 /*Общие*/
