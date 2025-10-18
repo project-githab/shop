@@ -23,8 +23,9 @@
 }
 
 * {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
+
 *::before,
 *::after {
   box-sizing: border-box;
@@ -116,6 +117,11 @@ h1 {
   margin-top: 1rem;
   transition: var(--transform4) ease-in-out;
   background-color: var(--color-5);
+
+  user-select: none;
+  -webkit-user-select: none; /* Для старых браузеров WebKit (Safari, Android) */
+  -moz-user-select: none; /* Для старых версий Firefox */
+  -ms-user-select: none; /* Для Internet Explorer/Edge */
 }
 
 .btn-b:hover {

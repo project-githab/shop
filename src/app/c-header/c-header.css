@@ -248,6 +248,11 @@
   width: fit-content;
   cursor: pointer;
   transition: var(--transform4) ease-in-out;
+
+  user-select: none;
+  -webkit-user-select: none; /* Для старых браузеров WebKit (Safari, Android) */
+  -moz-user-select: none; /* Для старых версий Firefox */
+  -ms-user-select: none; /* Для Internet Explorer/Edge */
 }
 
 .btn2:hover {
