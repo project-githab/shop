@@ -288,6 +288,10 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.fot-ne:hover {
+  background-color: var(--color-12);
 }
 
 
@@ -307,7 +311,7 @@
 }
 
 .b-burger:hover {
-  border-radius: 5px;
+  border-radius: 0.5rem;
   box-shadow: var(--shadow-1);
 }
 
@@ -316,6 +320,12 @@
   height: 0.7rem;
   background-color: var(--color-2);
   border-radius: 1.5rem;
+}
+
+
+.shadow-burger {
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-1);
 }
 
 /*Бургер*/

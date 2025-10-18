@@ -4,7 +4,7 @@ import {NgOptimizedImage, NgStyle} from '@angular/common';
 import {Router} from '@angular/router';
 import {CSideBar} from '../c-side-bar/c-side-bar';
 import {Burger} from '../_directives/side-bar/burger';
-import {ClickOutside} from '../_directives/click_outside/click-outside';
+import {Common} from '../_shared/common';
 
 @Component({
   selector: 'app-c-header',
@@ -13,14 +13,12 @@ import {ClickOutside} from '../_directives/click_outside/click-outside';
     NgOptimizedImage,
     NgStyle,
     CSideBar,
-    Burger,
-    ClickOutside
+    Burger
   ],
   templateUrl: './c-header.html',
   styleUrl: './c-header.css'
 })
-export class CHeader implements OnInit, DoCheck{
-
+export class CHeader implements OnInit, DoCheck {
 
 
   /**
@@ -41,20 +39,34 @@ export class CHeader implements OnInit, DoCheck{
   /**
    * Данный из input search
    */
-  valueInput: string = '';
+  valueInput: string = "";
 
 
-  bgColorHome: string = '';
+  bgColorHome: boolean = false;
+  isActiveList: boolean = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private common: Common) {
+  }
 
   ngOnInit(): void {
 
     this.router.url;
     if (this.router.url === "/") {
-      this.bgColorHome = '#ff5500';
+      this.bgColorHome = true;
     }
 
+  }
+
+  isList() {
+    this.bgColorHome = !this.bgColorHome;
+    this.isActiveList = !this.isActiveList;
+    this.common.toggleSidebarM("l")
+  }
+
+  backHome() {
+    this.bgColorHome = true;
+    this.isActiveList = false;
+    this.common.toggleSidebarM("h")
   }
 
   /**
@@ -65,19 +77,15 @@ export class CHeader implements OnInit, DoCheck{
     /**
      * Очищает input search от данных
      */
-    this.valueInput = '';
+    this.valueInput = "";
   }
 
-
-  isActive: boolean = false;
-  clickButtonBurger() {
-    this.isActive = !this.isActive;
+  /**
+   * Отображает sidebar
+   */
+  toggleSidebar() {
+    this.common.toggleSidebar()
   }
-
-  deactivateBurger() {
-    this.isActive = false;
-    console.log('Клик вне элемента. isActive:', this.isActive);
-}
 
 
   /**
@@ -88,11 +96,9 @@ export class CHeader implements OnInit, DoCheck{
     /**
      * Проверяем есть ли данные в input search. Если пусто, то {@link isVisible} true и кнопка для очистки input search исчезает. Если не пусто, то {@link isVisible} принимает значение false и кнопка для очистки input search появляется.
      */
-    this.isVisible = this.valueInput === '';
+    this.isVisible = this.valueInput === "";
 
   }
-
-
 
 
 }
