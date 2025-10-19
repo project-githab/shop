@@ -278,7 +278,6 @@
   width: 100%;
   background-color: var(--color-3);
   border-top: 0.3rem solid var(--color-8);
-  z-index: 1;
 }
 
 

@@ -120,6 +120,8 @@ h1 {
   transition: var(--transform4) ease-in-out;
   background-color: var(--color-5);
 
+  font-size: 2rem;
+
   user-select: none;
   -webkit-user-select: none; /* Для старых браузеров WebKit (Safari, Android) */
   -moz-user-select: none; /* Для старых версий Firefox */
@@ -204,5 +206,8 @@ h1 {
 
 .z-index {
   z-index: 1;
+}
+.z-index2 {
+  z-index: 2;
 }
 /*Общие*/
