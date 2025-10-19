@@ -19,7 +19,6 @@
   display: flex;
   box-shadow: 0 0 0.8rem 0 rgb(191 191 191 / 50%);
   background-color: var(--color-11);
-  /*background-color: brown;*/
   border-radius: 1rem;
   flex-direction: column;
 }
@@ -27,8 +26,7 @@
 .b-img-p {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background-color: rgb(255, 0, 0);
-  /*background-color: rgb(247, 247, 247);*/
+  background-color: rgb(247, 247, 247);
   border-radius: 1rem 1rem 0 0;
   overflow: hidden;
   display: flex;
@@ -112,14 +110,11 @@
   min-height: 10.6rem;
   border: 0.3rem solid transparent;
   transition: all 0.3s ease-in-out;
-  /*padding: 3px 5px 0 7px;*/
 }
 
 .text:hover {
   background-color: var(--color-9);
   border-radius: 1rem;
-  /*box-shadow: var(--shadow-1);*/
-  /*transition: box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out;*/
 }
 
 .text:active {
