@@ -191,16 +191,16 @@ h1 {
 }
 
 .border-bl {
-  border-bottom-left-radius: 10rem;
+  border-bottom-left-radius: 1rem;
 }
 .border-br {
-  border-bottom-right-radius: 10rem;
+  border-bottom-right-radius: 1rem;
 }
 .border-tl {
-  border-top-left-radius: 10rem;
+  border-top-left-radius: 1rem;
 }
 .border-tr {
-  border-top-right-radius: 10rem;
+  border-top-right-radius: 1rem;
 }
 
 

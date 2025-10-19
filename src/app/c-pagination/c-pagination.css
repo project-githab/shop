@@ -10,6 +10,10 @@
   display: none;
 }
 
+.point-4 {
+  display: none;
+}
+
 .pagination {
   display: flex;
   width: 100%;
@@ -125,7 +129,7 @@
   }
 
   .forward {
-    width: 10.5rem;
+    width: 13.5rem;
     height: 5rem;
   }
 
@@ -134,7 +138,7 @@
   }
 
   .back {
-    width: 9rem;
+    width: 12rem;
     height: 5rem;
   }
 
@@ -170,5 +174,13 @@
   .back-svg {
     margin-top: 0.7rem;
     margin-right: 1rem;
+  }
+
+  .point-3 {
+    display: none;
+  }
+
+  .point-4 {
+    display: flex;
   }
 }
