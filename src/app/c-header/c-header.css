@@ -13,6 +13,7 @@
   background-color: var(--color-3);
   flex-direction: column;
   padding-bottom: 2rem;
+  align-items: center;
 }
 
 /*header*/
@@ -22,6 +23,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  max-width: 157rem;
+  width: 100%;
 }
 
 

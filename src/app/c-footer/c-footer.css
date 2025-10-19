@@ -5,6 +5,11 @@
   margin-bottom: 5rem;
   flex-direction: column;
   background-color: var(--color-3);
+  align-items: center;
+}
+.b-footer {
+  max-width: 1570px;
+  width: 100%;
 }
 
 .b-list {
